@@ -1,0 +1,17 @@
+server:
+  port: 80
+
+spring:
+  application:
+    name: image-processing
+  profiles:
+    active: dev
+
+worker-service:
+  host: worker-service
+  port: 80
+
+
+blob-store:
+  host: blob-store
+  port: 80

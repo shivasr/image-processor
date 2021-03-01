@@ -1,0 +1,10 @@
+server:
+  port: 80
+spring:
+  application:
+    name: worker-service
+  profiles:
+    active: dev
+blob-store:
+  host: blob-store
+  port: 80

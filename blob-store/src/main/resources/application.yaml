@@ -1,0 +1,9 @@
+server:
+  port: 80
+spring:
+  application:
+    name: blob-service
+  profiles:
+    active: dev
+blob:
+  location: src/main/resources
