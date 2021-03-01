@@ -19,10 +19,10 @@ This solution requires Docker and Docker Compose to be installed.
 
 Follow the below steps to install the solution.
 
-* Clone the repo https://github.com/shivasr/image-processing-spring.git
+* Clone the repo https://github.com/shivasr/image-processor.git 
 
 ```bash
-git clone https://github.com/shivasr/image-processing-spring.git
+git clone https://github.com/shivasr/image-processor.git
 ```
 * Change the directory into image-processing-spring
 
