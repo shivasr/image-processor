@@ -24,10 +24,10 @@ Follow the below steps to install the solution.
 ```bash
 git clone https://github.com/shivasr/image-processor.git
 ```
-* Change the directory into image-processing-spring
+* Change the directory into image-processor
 
 ```bash
-cd image-processing-spring
+cd image-processor
 ```
 * Compile and start the solution
 
