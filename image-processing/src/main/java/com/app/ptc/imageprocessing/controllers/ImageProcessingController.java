@@ -23,6 +23,7 @@ import java.util.Locale;
 @RequestMapping("/")
 public class ImageProcessingController {
 
+    public static final String HEADER_AUTHORIZATION = "Authorization";
     Logger logger = LoggerFactory.getLogger(ImageProcessingController.class);
 
     private final RestTemplate restTemplate = new RestTemplate();
@@ -43,7 +44,7 @@ public class ImageProcessingController {
         Job job;
 
         try {
-            String header = request.getHeader("Authorization");
+            String header = request.getHeader(HEADER_AUTHORIZATION);
             User user = JWTUtil.authenticateAndRetrieveUserDetails(header);
 
             verifyMD5(ipRequest);

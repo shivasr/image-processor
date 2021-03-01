@@ -65,7 +65,7 @@ public class JobController {
         job.setJobStatus(Job.JobStatus.RUNNING);
         job = repository.save(job);
 
-        logger.info("Received image processing request with job Id {}", job.getId());
+        logger.info("Created job with Id {}.", job.getId());
         return ResponseEntity.ok(job);
     }
 }

@@ -8,6 +8,8 @@ import com.auth0.jwt.algorithms.Algorithm;
 import com.auth0.jwt.exceptions.JWTVerificationException;
 import com.auth0.jwt.interfaces.DecodedJWT;
 
+import java.util.Optional;
+
 public class JWTUtil {
 
     /**
@@ -31,7 +33,10 @@ public class JWTUtil {
                     .clientId(jwt.getClaim("oid").toString())
                     .email(jwt.getClaim("email").toString())
                     .build();
+            Optional.ofNullable(user.getClientId()).orElseThrow( () -> new ArithmeticException("Client ID is missing"));
+            Optional.ofNullable(user.getTenantId()).orElseThrow(() -> new ArithmeticException("Tenant ID is missing"));
             return user;
+
 
         } catch (JWTVerificationException exception){
             //Invalid signature/claims

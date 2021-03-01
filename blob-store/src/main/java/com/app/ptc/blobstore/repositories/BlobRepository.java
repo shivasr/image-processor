@@ -2,7 +2,6 @@ package com.app.ptc.blobstore.repositories;
 
 import com.app.ptc.blobstore.model.BlobImage;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.Repository;
 import org.springframework.stereotype.Component;
 
 /**

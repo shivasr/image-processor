@@ -8,6 +8,7 @@ services:
     ports:
       - "8080:80"
     environment:
+      - SERVER_PORT=80
       - BLOB-STORE_HOST=blob-store
       - BLOB-STORE_PORT=80
       - WORKER-SERVICE_HOST=worker-service
@@ -19,6 +20,8 @@ services:
     restart: always
     ports:
       - "8081:80"
+    environment:
+      - SERVER_PORT=80
 
   blob-store:
     build: ./blob-store
@@ -29,3 +32,4 @@ services:
       - "8082:80"
     environment:
       - BLOB_LOCATION=/images
+      - SERVER_PORT=80
