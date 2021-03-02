@@ -2,6 +2,10 @@
 
 This is a sample Spring boot-based microservice. This contains the following microservices.
 
+## Dependency
+* This solution is built on latest version of JDK 15.
+* This solution requires docker and docker-compose installed on the machine.
+
 ## Image Processing Service: 
 * Listens to requests at image-processing:8080
 * Authenticates the requests based JWT token, extracts client ID, tenant ID. 
