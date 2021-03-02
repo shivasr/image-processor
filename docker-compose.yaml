@@ -1,32 +1,29 @@
 version: "3.9"
 services:
   image-processing:
-    image: localhost:5000/image-processing
-    build: ./image-processing
+    image: shivasr/image-processing
     container_name: image-processing
     restart: always
     ports:
       - "8080:80"
     environment:
       - SERVER_PORT=80
-      - BLOB-STORE_HOST=blob-store
+      - BLOB-STORE_HOST=worker.blob.net
       - BLOB-STORE_PORT=80
-      - WORKER-SERVICE_HOST=worker-service
+      - WORKER-SERVICE_HOST=worker.cloud.net
       - WORKER-SERVICE_PORT=80
-  worker-service:
-    build: ./worker-service
-    image: localhost:5000/worker-service
-    container_name: worker-service
+  worker.cloud.net:
+    image: shivasr/worker-service
+    container_name: worker.cloud.net
     restart: always
     ports:
       - "8081:80"
     environment:
       - SERVER_PORT=80
 
-  blob-store:
-    build: ./blob-store
-    image: localhost:5000/blob-store
-    container_name: blob-store
+  worker.blob.net:
+    image: shivasr/blob-store
+    container_name: worker.blob.net
     restart: always
     ports:
       - "8082:80"
