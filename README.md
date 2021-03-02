@@ -2,7 +2,7 @@
 
 This is a sample Spring boot-based microservice. This contains the following microservices.
 
-## Dependency
+## Dependencies
 * This solution is built on latest version of JDK 15.
 * This solution requires docker and docker-compose installed on the machine.
 
