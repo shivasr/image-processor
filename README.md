@@ -3,7 +3,7 @@
 This is a sample Spring boot-based microservice. This contains the following microservices.
 
 ## Dependencies
-* This solution is built on latest version of JDK 15.
+* This solution is built on version of JDK 11.
 * This solution requires docker and docker-compose installed on the machine.
 
 ## Image Processing Service: 
