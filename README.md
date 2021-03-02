@@ -2,10 +2,6 @@
 
 This is a sample Spring boot-based microservice. This contains the following microservices.
 
-## Dependencies
-* This solution is built on version of JDK 11.
-* This solution requires docker and docker-compose installed on the machine.
-
 ## Image Processing Service: 
 * Listens to requests at image-processing:8080
 * Authenticates the requests based JWT token, extracts client ID, tenant ID. 
@@ -17,7 +13,10 @@ This is a sample Spring boot-based microservice. This contains the following mic
 * Listens to requests at blobl-storage:8082 and accepts Job objects at /api/v1/blob and reports status at /api/v1/blob/{id}/status
 
 ## Pre-requisites
-This solution requires Docker and Docker Compose to be installed.
+* This solution requires Docker and Docker Compose to be installed.
+* This solution is built on version of JDK 11.
+* This solution requires docker and docker-compose installed on the machine.
+
 
 ## Installation
 
