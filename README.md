@@ -12,14 +12,14 @@ This is a sample Spring boot-based microservice. This contains the following mic
 ## Blob Storage Service
 * Listens to requests at blobl-storage:8082 and accepts Job objects at /api/v1/blob and reports status at /api/v1/blob/{id}/status
 
-## Pre-requisites
+## Installation
+
+### Pre-requisites
 * This solution requires Docker and Docker Compose to be installed.
 * This solution is built on version of JDK 11.
 * This solution requires docker and docker-compose installed on the machine.
 
-
-## Installation
-
+### Steps
 Follow the below steps to install the solution.
 
 * Clone the repo https://github.com/shivasr/image-processor.git 
