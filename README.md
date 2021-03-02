@@ -38,7 +38,7 @@ cd image-processor
 sh ./run_solution.sh
 ```
 
-### Note: If for some reason, if you cannot run the bash script follow the below steps to compile and start the services:
+#### Note: If for some reason, if you cannot run the bash script follow the below steps to compile and start the services:
 
 * Compile the application at image-processing/, worker-service/, blob-store/
 
